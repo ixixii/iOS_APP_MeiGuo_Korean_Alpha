@@ -1,0 +1,20 @@
+PODS:
+  - pop (1.0.12)
+  - XHRealTimeBlur (1.7)
+
+DEPENDENCIES:
+  - pop
+  - XHRealTimeBlur
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - pop
+    - XHRealTimeBlur
+
+SPEC CHECKSUMS:
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
+
+PODFILE CHECKSUM: ef1c13a26012b733f77ea36a3a9673b0e03a1bb6
+
+COCOAPODS: 1.8.4
