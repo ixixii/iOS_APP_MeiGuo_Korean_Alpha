@@ -45,6 +45,6 @@
 }
 - (NSString *)hongBaoBottomStr
 {
-    return @"sg31.com";
+    return @"korean alpha";
 }
 @end

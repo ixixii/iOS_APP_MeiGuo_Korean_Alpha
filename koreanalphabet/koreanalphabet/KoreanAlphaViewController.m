@@ -69,7 +69,7 @@
 - (void)loadDataFromPlist
 {
     NSBundle *mainBundle = [NSBundle mainBundle];
-    NSString *fullPath = [mainBundle pathForResource:@"korean_alpha" ofType:@"plist"];
+    NSString *fullPath = [mainBundle pathForResource:@"korean_alpha2" ofType:@"plist"];
     NSArray *classDictArr = [NSArray arrayWithContentsOfFile:fullPath];
     
     _alphaModelArr = [HanYuAlphaModel objectArrayWithKeyValuesArray:classDictArr];
@@ -271,7 +271,7 @@
     UIMenuController *menuController = [UIMenuController sharedMenuController];
     
     
-    [menuController setMenuItems:@[hideItem]];
+    [menuController setMenuItems:@[menuItem1,hideItem]];
     
     
     CGRect menuLocation = CGRectMake(btn.centerX, btn.y + 5, 0, 65);
@@ -286,8 +286,7 @@
 
 - (void)abstract_playMp3WithModel:(HanYuAlphaModel *)model
 {
-    NSString *encodeMp3 ;
-    encodeMp3 = model.roma_mp3;
+    NSString *encodeMp3 = [NSString stringWithFormat:@"%@.mp3",model.index];
     NSString *fullPath = [[NSBundle mainBundle] pathForResource:encodeMp3 ofType:nil];
     [self playMp3WithFullPath:fullPath loopNumber:1 isEncoded:NO];
 }

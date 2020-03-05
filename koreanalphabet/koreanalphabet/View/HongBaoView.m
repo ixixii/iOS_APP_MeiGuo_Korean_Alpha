@@ -159,7 +159,7 @@
     NSString *readString_new = self.model.hongBaoBottomStr;
     bottomLabel.text = readString_new;
     
-    bottomLabel.textColor = kColor(254, 219, 122);
+    bottomLabel.textColor = kColor(148, 29, 44);
     int bottomFontSize = 60;
     
     bottomLabel.font = [UIFont systemFontOfSize:bottomFontSize];

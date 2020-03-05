@@ -152,6 +152,9 @@ for alpha in arr:
     url = 'http://fanyi.baidu.com/gettts?lan=kor&text='+alpha+'  !'+alpha+'  !'+alpha+'  !'
     urllib.urlretrieve(url, alpha+".mp3")
 
+这儿有一个BUG，必须是1.mp3这样，
+否则iPhone 11 Pro Max不能加载音频文件 
+
 6.9 开始实现tab的第2个界面 √
     直接照搬美国白包2中的代码即可
 --------------------------    
@@ -169,7 +172,7 @@ todo list 7:隐私政策：privacy.html,放到 Linux服务器 √
 
     此时，再将url地址 http://vwhm.net/app/koreanalpha/privacy.html，填回itunesconnect
 --------------------------    
-todo list 9: 尾声，上传项目源代码到git
+todo list 9: 尾声，上传项目源代码到git √
 新建 .gitignore
 在里面写上Pods
 表示Pods目录不需要git来管理,因为它是pod install自动生成的
@@ -178,19 +181,24 @@ git init
 git add --all
 git commit -m 'iOS 美国区白包3 Korean Alpha 第一次提交(itunesconnect不能实时同步appid,尚未创建应用)'
 git remote add origin https://github.com/ixixii/iOS_APP_MeiGuo_Korean_Alpha.git
+
+
+注意： 以下尚未执行。。。
 git push -u origin master
 git push origin master
-
 --------------------------
-todo list 2: 转到itunesconnect创建应用 (开发者网站上注册appid后，不一定itunesconnect会实时更新)
+todo list 2: 转到itunesconnect创建应用 √
+            (开发者网站上注册appid后，不一定itunesconnect会实时更新)
     转到itunesconnect,创建应用,新建app
-    起名：ThaiAlpha （可能会提示名称已被注册）
+    起名：KoreanAlpha （可能会提示名称已被注册）
     主要语言：英文
+    APP ID:net.vwhm.koreanalphabet
+    SKU: sku_korean_alpha
     
 
 
-    名称：ThaiAlpha
-    副标题：Thai Alpha Learning
+    名称：KoreanAlpha
+    副标题：Korean Alpha Learning
     类别：教育/工具
     价格：免费
     年龄分级：4+
@@ -201,36 +209,43 @@ todo list 2: 转到itunesconnect创建应用 (开发者网站上注册appid后�
 
 todo list 7: 打包ipa，Xcode不用登陆开发者账号，使用distribution provisoning file就行
 
-			使用Application uploder上传ipa 
-			打包上传时，不用XCODE，而是推荐使用Application uploder，但是需要用app专用密码登陆才行
-			url: https://appleid.apple.com/
-    		
+            使用Application uploder上传ipa 
+            打包上传时，不用XCODE，而是推荐使用Application uploder，但是需要用app专用密码登陆才行
+            url: https://appleid.apple.com/
+            
+
+            版权：Alva Denise
 
 todo list 8: 8种语言本地化 后，提交苹果审核
-			关键词，记得要填写
-			英文美国
-			It is an Thai alphabet learning software. For those who are interested in Thai, this tool is necessary. It can help you quickly and firmly master Thai alphabet, including their pronunciation and writing scientifically and efficiently.
+            关键词，记得要填写
+
+            技术支持网址：vwhm.net
+            iPhone 11 Pro Max 没有声音
+
+            英文美国
+            It is an Korean alphabet learning software. For those who are interested in Korean, this tool is necessary. It can help you quickly and firmly master Korean alphabet, including their pronunciation and writing scientifically and efficiently.
+
+96.7
+
+            日文
+            韓国語のアルファベット学習ソフトは、韓国語に興味がある人にとって必要なツールです。科学的で効率的に速く、しっかりと韓国語のアルファベットをマスターできます。彼らの発音と書き方も含まれます。
+
+            中文简体
+            一款韩语字母学习软件，对于那些对韩语感兴趣的人士来说这款工具是必备品，它能科学高效地帮您快速并且牢固地掌握韩语字母，包括他们的发音和书写
+
+            中文繁体
+
+            英文英国
+            英文加拿大
+            英文澳大利亚
+
+            日文
+
+            韩文
+            태국어 알파벳 학습 소프트웨어, 태국어에 흥미를 느끼는 사람들에게 이 공구는 필수품입니다. 그것은 과학적 효율적으로 당신에게 빠른 속도와 태국어 알파벳, 그들의 발음과 글씨를 포함하여 쓰기 포함합니다.
 
 
-
-			中文简体
-			一款泰语字母学习软件，对于那些对泰语感兴趣的人士来说这款工具是必备品，它能科学高效地帮您快速并且牢固地掌握泰语字母，包括他们的发音和书写
-
-			中文繁体
-			一款泰語字母學習軟體，對於那些對泰語感興趣的人士來說這款工具是必備品，它能科學高效地幫您快速並且牢固地掌握泰語字母，包括他們的發音和書寫
-
-			英文英国
-			英文加拿大
-			英文澳大利亚
-
-			日文
-			タイ語のアルファベット学習ソフトは、タイ語に興味がある人にとって必要なツールです。科学的に効率的に迅速かつ確実にタイ語のアルファベットをマスターします。彼らの発音と書き込みが含まれます。
-
-			韩文
-			태국어 알파벳 학습 소프트웨어, 태국어에 흥미를 느끼는 사람들에게 이 공구는 필수품입니다. 그것은 과학적 효율적으로 당신에게 빠른 속도와 태국어 알파벳, 그들의 발음과 글씨를 포함하여 쓰기 포함합니다.
-
-
-			版权：Alva Denise
+            
 
 
 
@@ -239,6 +254,6 @@ todo list 10: 清理战场
     developer.apple.com
     https://appstoreconnect.apple.com/login
 
-    准备登陆下一个账号，写第3个美国区白包			
+    准备登陆下一个账号，写第3个美国区白包         
 
 

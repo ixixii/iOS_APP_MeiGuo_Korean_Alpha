@@ -12,5 +12,6 @@
 @property (nonatomic,copy) NSString *word;
 @property (nonatomic,copy) NSString *readTip;
 @property (nonatomic,copy) NSString *remark;
+@property (nonatomic,copy) NSString *index;
 
 @end
